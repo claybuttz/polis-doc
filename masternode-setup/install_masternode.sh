@@ -1,10 +1,6 @@
-#/bin/bash
-
 clear
 cd ~
 sleep 3
-
-# Check for systemd
 systemctl --version >/dev/null 2>&1 || { echo "systemd is required. Are you using Ubuntu 16.04?"  >&2; exit 1; }
 
 # Gather input from user
