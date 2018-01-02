@@ -1,8 +1,6 @@
 clear
 cd ~
 sleep 3
-systemctl --version >/dev/null 2>&1 || { echo "systemd is required. Are you using Ubuntu 16.04?"  >&2; exit 1; }
-
 # Gather input from user
 read -e -p "Masternode Private Key (e.g. 31o6u1Ga4WxFog2b8QP9bQMrfbUtRj2tSk7sZVM9sryvQHamkyM) : " key
 if [[ "$key" == "" ]]; then
